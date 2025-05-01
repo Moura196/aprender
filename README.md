@@ -1,10 +1,6 @@
 # Spring Security
-
-Here I aim to make important notes throughout my learning process about authentication, authorization and protection against common security exploits in Java application, which are built with Spring Security.
-
-Specificaly this branch only show the default and initial configuration of this framework.
-
-I invite you to look for the other branchs, which each one shows a different objective coding using this framework.
+## Simple Authentication
+- The changes here happened at the application.properties file. I defined with which user name, password and roles the user can be authenticated. Only use for demonstrations purposes.
 
 # References
 - [Getting Spring Security](https://docs.spring.io/spring-security/reference/getting-spring-security.html)
