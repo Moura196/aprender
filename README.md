@@ -5,3 +5,7 @@ Here I aim to make important notes throughout my learning process about authenti
 Specificaly this branch only show the default and initial configuration of this framework.
 
 I invite you to look for the other branchs, which each one shows a different objective coding using this framework.
+
+# References
+- [Getting Spring Security](https://docs.spring.io/spring-security/reference/getting-spring-security.html)
+- [Getting Started](https://docs.spring.io/spring-security/reference/servlet/getting-started.html)
