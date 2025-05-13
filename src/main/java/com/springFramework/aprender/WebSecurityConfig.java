@@ -21,12 +21,12 @@ public class WebSecurityConfig {
 		UserDetails user = User.builder()
 			.username("user")
 			.password("{noop}teste")
-			.roles("USER")
+			.roles("USERS")
 			.build();
 		UserDetails admin = User.builder()
 			.username("admin")
 			.password("{noop}teste12")
-			.roles("USER", "ADMIN")
+			.roles("USERS", "MANAGERS")
 			.build();
 		return new InMemoryUserDetailsManager(user, admin);
 	}
