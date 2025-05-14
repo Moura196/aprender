@@ -1,6 +1,10 @@
 package com.springFramework.aprender;
 
-import org.springframework.security.access.prepost.PreAuthorize;
+import java.util.Collection;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,15 +17,16 @@ public class WelcomeController {
 	}
 	
 	@GetMapping("/users")
-	@PreAuthorize("hasAnyRole('MANAGERS', 'USERS')")
 	public String users() {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+	    Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+	    System.out.println("Roles do usuário autenticado: " + authorities);
 		return "Authorized user";
 	}
 	
-	@GetMapping("/managers")
-	@PreAuthorize("hasAnyRole('MANAGERS')")
-	public String managers() {
-		return "Authorized manager";
+	@GetMapping("/admins")
+	public String admins() {
+		return "Authorized admin";
 	}
-
+	
 }
