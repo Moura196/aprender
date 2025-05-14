@@ -9,3 +9,5 @@
 - [Getting Spring Security](https://docs.spring.io/spring-security/reference/getting-spring-security.html)
 - [Getting Started](https://docs.spring.io/spring-security/reference/servlet/getting-started.html)
 - [Passwoord In Memory](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/in-memory.html) - Servlet Applications.
+- [SecurityFilterChain](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-filters-review)
+- [Aithorize HttpServletRequests](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html#request-authorization-architecture)
